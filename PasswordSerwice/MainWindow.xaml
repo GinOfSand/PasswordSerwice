@@ -1,0 +1,27 @@
+﻿<Window x:Class="PasswordSerwice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordSerwice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="13*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBox HorizontalAlignment="Left" Margin="13,35,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="13,76,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="147,35,0,0" Grid.Row="1" VerticalAlignment="Top" Height="59" Width="50"/>
+        <Button Content="Регистрация" HorizontalAlignment="Left" Margin="13,6,0,6" Width="120"/>
+        <Button Content="Добавит Сервис" HorizontalAlignment="Left" Margin="147,0,0,0" VerticalAlignment="Center" Width="110"/>
+
+    </Grid>
+</Window>
